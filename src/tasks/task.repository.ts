@@ -4,7 +4,7 @@ import { CreateTaskDto } from './dtos/create-taks.dto';
 import { TaskStatus } from './task-status';
 import { GetTaskFilterDto } from './dtos/get-task-filter.dto';
 import { Injectable } from '@nestjs/common';
-import { User } from 'src/auth/user.entity';
+import { User } from '../auth/user.entity';
 
 @Injectable()
 export class TasksRepository extends Repository<Task> {
